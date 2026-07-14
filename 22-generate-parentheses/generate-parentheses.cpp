@@ -10,11 +10,15 @@ void fun(string s, int n, vector<string>&ans, int ou)
     }
     if(n>0)
     {
-        fun(s+'(',n-1,ans,ou+1);
+        s+='(';
+        fun(s,n-1,ans,ou+1);
+        s.pop_back();
     }
     if(ou>0)
     {
-        fun(s+')',n,ans,ou-1);
+        s+=')';
+        fun(s,n,ans,ou-1);
+        s.pop_back();
     }
 
 }
