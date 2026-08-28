@@ -18,7 +18,7 @@ char anticlockwise(char c)
     int openLock(vector<string>& deadends, string target) {
 
         set<string>dead(deadends.begin(),deadends.end());
-
+// HERE WE USED .count() FUNCTION --> IT RETURNS THE NUMBER OF TIMES THE STRINF IS PRESENT IN THE SET.
         if(dead.count("0000"))
         return -1;
 
