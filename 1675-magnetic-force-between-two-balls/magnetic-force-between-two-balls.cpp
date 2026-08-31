@@ -17,7 +17,7 @@ bool is_valid(vector<int>& position, int dist,int m) {
         sort(position.begin(),position.end());
         int start=1;
         int ans=0;
-        int end=position[position.size()-1]-position[0];
+        int end=position[position.size()-1];
         while(start<=end){
             int mid=start+(end-start)/2;
             if(is_valid(position, mid, m)){
