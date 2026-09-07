@@ -47,9 +47,7 @@ int find_right(vector<int>& nums, int target){
 }
 
     vector<int> searchRange(vector<int>& nums, int target) {
-
         vector<int>ans(2);
-
         ans[0]= find_left(nums,target);
         ans[1]= find_right(nums,target);
 
